@@ -10,6 +10,8 @@ Setup
 
 ``` go
 
+import otelTraceChannel "github.com/hpcslag/watermill-otel-tracable-gochannel/gochannel"
+
 // Important to use JSON Marshaler
 cqrsMarshaler := cqrs.JSONMarshaler{}
 
@@ -27,3 +29,7 @@ commandsChannel := otelTraceChannel.NewGoChannel(
 // ... 
 
 ```
+
+# Reference
+
+Original code please refer to watermill repository: https://github.com/ThreeDotsLabs/watermill/blob/master/pubsub/gochannel/pubsub.go
